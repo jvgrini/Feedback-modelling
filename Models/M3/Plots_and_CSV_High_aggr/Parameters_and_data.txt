@@ -1,0 +1,13 @@
+
+k1 = 0
+k2 = Phase 1: 2, phase 2: 6
+k3 = 100
+k4 = from 0 to 32
+k5 = 2.5
+k6 = 1
+k7 = 10**-6
+ki = 1
+
+Points used in max response plot. The values are the set point of A (1.5) minus the lowest solutions to the rate equations for A
+[0, 2, 4, 8, 16, 32] 
+[0.5079855555208392, 0.44503835242040113, 0.39483153067343024, 0.32045417543414856, 0.23046313965343757, 0.1456791952149905]
