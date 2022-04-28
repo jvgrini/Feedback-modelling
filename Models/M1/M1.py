@@ -49,10 +49,10 @@ y = np.concatenate((y, odeint(model, x1, t2, args=(p2k2,))))
 A = y[:,0]
 E = y[:,1] 
 
-with open("Models/M1/CSVfiles/CSV_A_k4=64", "w", newline='') as file:
+with open("Models/M1/CSVfiles/CSV_A_k4=64.csv", "w", newline='') as file:
     writer = csv.writer(file)
     writer.writerows([A])
-with open ("Models/M1/CSVfiles/CSV_E_k4=64", "w",newline='') as file:
+with open ("Models/M1/CSVfiles/CSV_E_k4=64.csv", "w",newline='') as file:
     writer = csv.writer(file)
     writer.writerows([E])
 
