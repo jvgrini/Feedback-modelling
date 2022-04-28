@@ -83,7 +83,7 @@ for i in range(len(k3values)):
             break
 #print(plotArray)
 
-with open('CSV/M8_ChangeEss.csv', "w", newline='') as file:
+with open('Models_compare/ChangeEss/CSV/t_M8_ChangeEss.csv', "w", newline='') as file:
     writer = csv.writer(file)
     writer.writerow(["k3","differences"])
     for i in range(len(k3values)):
@@ -93,5 +93,5 @@ plt.plot(k3values,differences, 'o')
 plt.grid()
 plt.xlabel("k3")
 plt.ylabel("Change in k1")
-plt.savefig("M8_changeEss.pdf")
+plt.savefig("Models_compare/plots_compare_models/t_M8_changeEss.pdf")
 plt.show()
