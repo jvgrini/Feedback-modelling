@@ -12,9 +12,9 @@ def model(x,t, vark2):
     k1 = 0
     k2 = vark2
     k3 = 100
-    k4 = 64
-    k5 = 0.625
-    k6 = 0.25
+    k4 = 0
+    k5 = 2.5
+    k6 = 1.0
     k7 = 10**-6
     ki = 1
 
@@ -49,16 +49,16 @@ y = np.concatenate((y, odeint(model, x1, t2, args=(p2k2,))))
 A = y[:,0]
 E = y[:,1] 
 
-with open("Models/M3/CSVfiles/test_CSV_A_k4=64", "w", newline='') as file:
+with open("Models/M3/CSVfiles/highAggr_CSV_A_k4=0", "w", newline='') as file:
     writer = csv.writer(file)
     writer.writerows([A])
-with open ("Models/M3/CSVfiles/test_CSV_E_k4=64", "w",newline='') as file:
+with open ("Models/M3/CSVfiles/highAggr_CSV_E_k4=0", "w",newline='') as file:
     writer = csv.writer(file)
     writer.writerows([E])
 
 plt.plot(t,A,label = "A")
 plt.grid()
-plt.savefig("Models/M3/Plots/M3plot_k4=64.pdf")
+plt.savefig("Models/M3/Plots/highAggr_M3plot_k4=0.pdf")
 plt.show()
 
 
