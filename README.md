@@ -1,5 +1,5 @@
 
-# Modeling of feedback models in photoreceptor cells
+# Modeling of feedback mechanisms in photoreceptor cells
 
 ...
 
