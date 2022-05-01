@@ -6,7 +6,7 @@ import csv
 def M2_dualE(x,t,pert):
     k1 = 0
     k2 = pert
-    k3 = 100
+    k3 = 200
     k4 = 32
     k5 = 2
     k6 = 3
