@@ -94,5 +94,5 @@ ax[1].grid(which ='both')
 ax[1].legend(loc='center left', bbox_to_anchor=(1, 0.5))
 
 plt.tight_layout()
-plt.savefig('Plot_compare_response_m5-8.pdf')
+plt.savefig('t_Plot_compare_response_m5-8.pdf')
 plt.show()
