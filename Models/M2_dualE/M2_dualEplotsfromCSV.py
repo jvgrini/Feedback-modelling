@@ -26,5 +26,5 @@ plt.title('M2 dual E')
 #plt.ylabel(' ')
 plt.xlim(9,60)
 
-plt.savefig("Models/M2_dualE/Plots/M2_dualEplot_merged_k3=200.pdf", bbox_inches='tight')
+plt.savefig("Models/M2_dualE/Plots/tM2_dualEplot_merged_k3=200.pdf", bbox_inches='tight')
 plt.show()

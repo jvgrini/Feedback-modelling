@@ -7,17 +7,18 @@ def M2_dualE(x,t,pert):
     k1 = 0
     k2 = pert
     k3 = 200
-    k4 = 32
+    k4 = 0
     k5 = 2
     k6 = 3
     k7 = 1
+    k9 = 0.5
     KI = 1
 
     A = x[0]
     E1 = x[1]
     E2 = x[2]
 
-    DADT = k1 - A*(k2+k4) + ((k3*KI)/(KI + E1))
+    DADT = k1 - A*(k2+k4+k9) + ((k3*KI)/(KI + E1))
 
     DE1DT = k5 * A - k7 *E1*E2
 
@@ -53,13 +54,13 @@ A = y[:,0]
 E1 = y[:,1] 
 E2 = y[:,2]
 
-with open("Models/M2_dualE/CSVfiles/CSV_A_k4=32.csv", "w", newline='') as file:
+with open("Models/M2_dualE/CSVfiles/CSV_A_k4=0.csv", "w", newline='') as file:
     writer = csv.writer(file)
     writer.writerows([A])
-with open ("Models/M2_dualE/CSVfiles/CSV_E1_k4=32.csv", "w",newline='') as file:
+with open ("Models/M2_dualE/CSVfiles/CSV_E1_k4=0.csv", "w",newline='') as file:
     writer = csv.writer(file)
     writer.writerows([E1])
-with open ("Models/M2_dualE/CSVfiles/CSV_E2_k4=32.csv", "w",newline='') as file:
+with open ("Models/M2_dualE/CSVfiles/CSV_E2_k4=0.csv", "w",newline='') as file:
     writer = csv.writer(file)
     writer.writerows([E2])
 
@@ -68,5 +69,5 @@ plt.plot(t,A,label = "A")
 #plt.plot(t,E2,label = "E2")
 plt.grid()
 #plt.xlim(7.5,20)
-plt.savefig("Models/M2_dualE/Plots/M2_dualE_plot_k4=32.pdf")
+plt.savefig("Models/M2_dualE/Plots/M2_dualE_plot_k4=0.pdf")
 plt.show()
